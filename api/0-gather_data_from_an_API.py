@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-This module fetches and displays an employee's TODO list progress from a REST API based on a given command-line employee ID.
+This module fetches and displays an employee's TODO list
+progress from a REST API based on a given command-line
+employee ID.
 """
 
 import requests
