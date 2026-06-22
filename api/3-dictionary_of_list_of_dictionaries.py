@@ -32,7 +32,6 @@ if __name__ == "__main__":
     # Distribute tasks into the correct employee list
     for task in todos_list:
         task_user_id = str(task.get("userId"))
-        
         # Verify the user exists in our map before logging
         if task_user_id in all_employees_data:
             all_employees_data[task_user_id].append({
