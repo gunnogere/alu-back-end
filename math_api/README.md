@@ -1,6 +1,6 @@
-# Simple Math API (Python)
+# Simple Python Math API demo
 
-A very simple API using Python’s built-in HTTP server.
+A very simple API using Python’s built-in HTTP server to perform basic math operations when two parameters are specified
 
 ## What it does
 
@@ -8,54 +8,49 @@ You can:
 - Add two numbers
 - Subtract two numbers
 - Multiply two numbers
+- Divide two numbers
 
-## Run it
+## ToRun it
 
 ```bash
-python app.py
+python math_basic_api.py
 ````
 
 Server runs at:
 
 ```
-http://localhost:5000
+http://localhost:1234
 ```
 
-## How to use
+## Sample calls
 
 ### Add
 
 ```
-/add?a=5&b=3
+http://localhost:1234/add?a=5&b=3
 ```
 
 ### Subtract
 
 ```
-/subtract?a=5&b=3
+http://localhost:1234/subtract?a=5&b=3
 ```
 
 ### Multiply
 
 ```
-/multiply?a=5&b=3
+http://localhost:1234/multiply?a=5&b=3
 ```
 
 ## Example result
 
 ```json
-{
-  "a": 5,
-  "b": 3,
-  "operation": "addition",
-  "result": 8
-}
-```
-
-## Note
-
-* You must provide `a` and `b`
-* Only for learning
+{"message": "The result of dividing 5 and 3 is 1.6666666666666667."}
+{"message": "The result of adding 5 and 3 is 8."}
+{"message": "The result of multiplying 5 and 3 is 15."}
+{"message": "The result of subtracting 5 and 3 is 2."}
 
 ```
+
+ 
 
