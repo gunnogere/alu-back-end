@@ -1,50 +1,47 @@
+# Simple Math API (Python)
 
+A very simple API using Python’s built-in HTTP server.
 
-# Simple Math API
+## What it does
 
-A beginner-friendly Python API built using the built-in `http.server` library.
-
-## Features
-
+You can:
 - Add two numbers
 - Subtract two numbers
 - Multiply two numbers
 
-## Requirements
-
-- Python 3
-
-No external libraries are required.
-
-## Run the Server
+## Run it
 
 ```bash
 python app.py
+````
+
+Server runs at:
+
+```
+http://localhost:5000
 ```
 
-You should see:
-
-```text
-Server running on http://localhost:5000
-```
-
-## API Endpoints
+## How to use
 
 ### Add
 
-**Request**
-
-```http
-GET /add?a=5&b=3
+```
+/add?a=5&b=3
 ```
 
-**Example**
+### Subtract
 
-```text
-http://localhost:5000/add?a=5&b=3
+```
+/subtract?a=5&b=3
 ```
 
-**Response**
+### Multiply
+
+```
+/multiply?a=5&b=3
+```
+
+## Example result
 
 ```json
 {
@@ -55,71 +52,10 @@ http://localhost:5000/add?a=5&b=3
 }
 ```
 
----
+## Note
 
-### Subtract
+* You must provide `a` and `b`
+* Only for learning
 
-**Request**
-
-```http
-GET /subtract?a=5&b=3
 ```
 
-**Example**
-
-```text
-http://localhost:5000/subtract?a=5&b=3
-```
-
-**Response**
-
-```json
-{
-  "a": 5,
-  "b": 3,
-  "operation": "subtraction",
-  "result": 2
-}
-```
-
----
-
-### Multiply
-
-**Request**
-
-```http
-GET /multiply?a=5&b=3
-```
-
-**Example**
-
-```text
-http://localhost:5000/multiply?a=5&b=3
-```
-
-**Response**
-
-```json
-{
-  "a": 5,
-  "b": 3,
-  "operation": "multiplication",
-  "result": 15
-}
-```
-
-## Project Structure
-
-```text
-.
-├── app.py
-└── README.md
-```
-
-## Notes
-
-- This project is intended for learning purposes.
-- Query parameters `a` and `b` must be provided.
-- The server runs on port `5000`.
-````
